@@ -1,9 +1,25 @@
-table {
-    border-collapse: collapse;
+
+        body {
+	background-color: #FFD0D0;
+	}
+  hr {
+    border: none;
+    border-top: 4px double #46C2CB;
+    color: #FBF8DD;
+    overflow: visible;
+    text-align: center;
+    height: 4px;
+  }
+  
+
+table { border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    /* border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     font-family: sans-serif;
     font-size: 0.8rem;
-    letter-spacing: 1px;
+    letter-spacing: 1px; */
   }
   
   caption {
@@ -11,14 +27,16 @@ table {
     padding: 10px;
     font-weight: bold;
   }
-  
+  .circle {
+    border-radius: 100%;
+   }
+
   thead,
   tfoot {
-    background-color: rgb(228 240 245);
+    background-color: rgb(174, 222, 242);
   }
   
-  th,
-  td {
+  th {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
   }
@@ -28,7 +46,7 @@ table {
   }
   
   tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+    background-color: rgb(252, 249, 251);
   }
   
   tfoot th {
@@ -38,4 +56,7 @@ table {
   tfoot td {
     font-weight: bold;
   }
-  
+  tr{    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;}
